@@ -14,9 +14,9 @@ function Survey() {
     worstTwo: false,
     worstThree: false,
     worstFour: false,
-    ductConsistency: 0,
-    duckColor: 0,
-    duckLogo: 0,
+    ductConsistency: "",
+    duckColor: "",
+    duckLogo: "",
     spendTimeSwimming: false,
     spendTimeBathing: false,
     spendTimeChatting: false,
@@ -91,26 +91,26 @@ function Survey() {
 
         <h4>How would you rate your rubber duck consistency?</h4>
         <ul className="form__group radio">
-          <RadioCheckBox name="ductConsistency" textContent="1" value={1} formValue={formData.ductConsistency} handleChange={handleChange}/>
-          <RadioCheckBox name="ductConsistency" textContent="2" value={2} formValue={formData.ductConsistency} handleChange={handleChange}/>
-          <RadioCheckBox name="ductConsistency" textContent="3" value={3} formValue={formData.ductConsistency} handleChange={handleChange}/>
-          <RadioCheckBox name="ductConsistency" textContent="4" value={4} formValue={formData.ductConsistency} handleChange={handleChange}/>
+          <RadioCheckBox name="ductConsistency" textContent="1" value="1" formValue={formData.ductConsistency} handleChange={handleChange}/>
+          <RadioCheckBox name="ductConsistency" textContent="2" value="2" formValue={formData.ductConsistency} handleChange={handleChange}/>
+          <RadioCheckBox name="ductConsistency" textContent="3" value="3" formValue={formData.ductConsistency} handleChange={handleChange}/>
+          <RadioCheckBox name="ductConsistency" textContent="4" value="4" formValue={formData.ductConsistency} handleChange={handleChange}/>
         </ul>
 
         <h4>How would you rate your rubber duck colour?</h4>
         <ul className="form__group radio">
-          <RadioCheckBox name="duckColor" textContent="1" value={1} formValue={formData.duckColor} handleChange={handleChange}/>
-          <RadioCheckBox name="duckColor" textContent="2" value={2} formValue={formData.duckColor} handleChange={handleChange}/>
-          <RadioCheckBox name="duckColor" textContent="3" value={3} formValue={formData.duckColor} handleChange={handleChange}/>
-          <RadioCheckBox name="duckColor" textContent="4" value={4} formValue={formData.duckColor} handleChange={handleChange}/>
+          <RadioCheckBox name="duckColor" textContent="1" value="1" formValue={formData.duckColor} handleChange={handleChange}/>
+          <RadioCheckBox name="duckColor" textContent="2" value="2" formValue={formData.duckColor} handleChange={handleChange}/>
+          <RadioCheckBox name="duckColor" textContent="3" value="3" formValue={formData.duckColor} handleChange={handleChange}/>
+          <RadioCheckBox name="duckColor" textContent="4" value="4" formValue={formData.duckColor} handleChange={handleChange}/>
         </ul>
 
         <h4>How would you rate your rubber duck logo?</h4>
         <ul className="form__group radio">
-          <RadioCheckBox name="duckLogo" textContent="1" value={1} formValue={formData.duckLogo} handleChange={handleChange}/>
-          <RadioCheckBox name="duckLogo" textContent="2" value={2} formValue={formData.duckLogo} handleChange={handleChange}/>
-          <RadioCheckBox name="duckLogo" textContent="3" value={3} formValue={formData.duckLogo} handleChange={handleChange}/>
-          <RadioCheckBox name="duckLogo" textContent="4" value={4} formValue={formData.duckLogo} handleChange={handleChange}/>
+          <RadioCheckBox name="duckLogo" textContent="1" value="1" formValue={formData.duckLogo} handleChange={handleChange}/>
+          <RadioCheckBox name="duckLogo" textContent="2" value="2" formValue={formData.duckLogo} handleChange={handleChange}/>
+          <RadioCheckBox name="duckLogo" textContent="3" value="3" formValue={formData.duckLogo} handleChange={handleChange}/>
+          <RadioCheckBox name="duckLogo" textContent="4" value="4" formValue={formData.duckLogo} handleChange={handleChange}/>
         </ul>
 
         <h4>How would you like to spend time with your rubber duck?</h4>        
