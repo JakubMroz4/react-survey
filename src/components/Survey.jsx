@@ -3,6 +3,7 @@ import AnswersItem from "./AnswersItem";
 import { CheckBox } from "./CheckBox";
 import TextInput from "./TextInput";
 import RadioCheckBox from "./RadioCheckBox";
+import AnswersList from "./AnswersList";
 
 function Survey() {
   const [formData, setFormData] = useState({
@@ -26,6 +27,19 @@ function Survey() {
     email: ""
   });
 
+  const [answers, setAnswers] = useState([
+    {
+      id: 1,
+      answersList: [false, false, false, false, false, false, false, false, false, false, false, false],
+      ductConsistency: "",
+      duckColor: "",
+      duckLogo: "",
+      else: "",
+      name: "",
+      email: ""
+    },
+  ]);
+
   const handleChange = (event) => {
     const { name, value, type } = event.target;
 
@@ -42,7 +56,7 @@ function Survey() {
 
     console.log(formData);
     setFormData({
-      bestOne: false,
+    bestOne: false,
     bestTwo: false,
     bestThree: false,
     bestFour: false,
@@ -68,6 +82,7 @@ function Survey() {
       <section className={`survey__list ${formData ? "open" : ""}`}>
         <h2>Answers list</h2>
         {/* answers should go here */}
+        <AnswersList {...answers[0]} />
 
       </section>
       <section className="survey__form">
