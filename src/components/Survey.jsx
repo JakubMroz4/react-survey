@@ -32,7 +32,7 @@ function Survey() {
     {
       id: 0,
       answersList: [
-        false,
+        true,
         false,
         false,
         false,
@@ -42,7 +42,7 @@ function Survey() {
         false,
         false,
         false,
-        false,
+        true,
         false,
       ],
       ductConsistency: "2",
@@ -135,7 +135,11 @@ function Survey() {
     <main className="survey">
       <section className={`survey__list ${formData ? "open" : ""}`}>
         <h2>Answers list</h2>
-        <AnswersList answersList={answers} questions={questions} />
+        <AnswersList
+          answersList={answers}
+          questions={questions}
+          answerTextContent={answerTextContent}
+        />
       </section>
       <section className="survey__form">
         <form onSubmit={handleSubmit}>
